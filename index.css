@@ -15,7 +15,7 @@ background-color: white;
 }
 .guess-game{
     text-align: center;
-    width: 980px;
+    width: 1500px;
     margin: 20px auto;
     display: flex;
     align-items: flex-start;
@@ -24,7 +24,7 @@ background-color: white;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 200px;
+        width: 500px;
         margin: 30px auto;
         gap: 10px;
         .check{
@@ -74,8 +74,8 @@ background-color: white;
         }
         input{
             margin: 0 5px;
-            width: 20px;
-            height: 20px;
+            width: 60px;
+            height: 60px;
             text-align: center;
             font-size: 40px;
             caret-color: orange;
@@ -134,8 +134,8 @@ background-color: white;
         }
     }
     .key{
-        height: 15px;
-        width: 15px;
+        height: 30px;
+        width: 30px;
         border-radius: 50%;
         margin-right: 10px;
     }
