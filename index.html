@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="guess.css">
     <title></title>
 </head>
 <body>
     <h1></h1>
-    <div class="guess-game">
-        <div class="game-area">
-            <div class="inputs"></div>
+    <div class="guess-game row">
+        <div class="game-area col-lg-8 col-md-12">
+            <div class="inputs row w-90"></div>
             <div class="control">
                 <button class="check">Check Word</button>
                 <button class="hint"><span></span> Hint</button>
             </div>
             <div class="message"></div>
         </div>
-            <div class="key-colors">
+            <div class="key-colors col-lg-4 col-md-12">
                 <h2 style="margin-bottom: 20px;">Key Colors</h2>
                 <div class="key-color">
                     <div class="key in-place" style="background-color: green;"></div>
@@ -33,7 +36,12 @@
                 </div>
             </div>
     </div>
-    <footer></footer>
-    <script src="./index.js"></script>
+    <footer class="d-flex flex-column align-items-center justify-content-center fs-5" style="height: 15vh;">
+        
+    </footer>
+    <script src="guess.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 </html>
