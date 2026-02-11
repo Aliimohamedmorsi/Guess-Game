@@ -1,6 +1,7 @@
 let gameTitle = "Guess The Word";
 document.querySelector("h1").innerHTML = gameTitle;
-document.querySelector("footer").innerHTML = 'Guess The Game Word Created By Ali Morsi';
+document.querySelector("footer").appendChild(document.createElement("h4")).innerHTML = "Guess The Game Word Created By Ali Morsi";
+document.querySelector("footer").appendChild(document.createElement("p")).innerHTML = '<p class="text-white fs-6 mb-0">© 2024 Guess Game</p>';
 
 let NumberOfTries = 6;
 let NumberOfLetters = 8;
@@ -38,7 +39,7 @@ for (let i = 1 ; i <= NumberOfTries ; i++ ){
         input.setAttribute("maxlength","1");
         TryDiv.appendChild(input);
     }
-    
+    TryDiv.classList.add("col-12");
     InputsContainer.appendChild(TryDiv);
 }
 InputsContainer.children[0].children[1].focus();
